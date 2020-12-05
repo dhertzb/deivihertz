@@ -1,0 +1,26 @@
+
+.p-2{
+	padding: 5px;
+}
+.d-flex{
+ display: flex;
+}
+.align-center{
+	align-items: center;
+}
+.h-100{
+	height: 100vh;
+}
+h1{
+	font-size:calc(28px + 1.5vw);
+	color: #f8961e;
+	font-family: Nunito Bold;
+}
+h2{
+	font-size: 20px;
+}
+@media (min-width:768px){
+	.home-column {
+    	flex: 1;
+	}
+}

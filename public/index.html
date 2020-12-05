@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <script async defer src="https://static.cdn.prismic.io/prismic.js?new=true&repo=deivihertz"></script>
+  </head>
+  <body>
+    <div id="main-wrapper">
+      <div id="app"></div>
+    </div>
+  </body>
+</html>
+<script src="./loader.js"></script>
+<script type="text/javascript">
+  // //create loading div
+  //   let loadingWrapper = document.createElement("div");
+  //   loadingWrapper.setAttribute('id', 'loading')
+  //   loadingWrapper.setAttribute('data-type', 'fill')
+  //   loadingWrapper.setAttribute('data-precision', '0.1')
+  //   loadingWrapper.setAttribute('data-img', './logo.svg')
+  //   loadingWrapper.setAttribute('data-fill-background-extrude', '0')
+  //   document.getElementById("main-wrapper").appendChild(loadingWrapper);
+  // /////
+  // //create loading bar//
+  // let bar1 = new ldBar("#loading");
+  // let bar2 = document.getElementById('loading').ldBar;
+
+  // // Preload progress bar main.js
+  // let req = new XMLHttpRequest()
+
+  // req.addEventListener("progress", function(event) {
+  //     if (event.lengthComputable) {
+  //         bar1.set(event.loaded / event.total * 100)
+  //       }
+  // }, false)
+
+  // req.addEventListener("load", function(event) {
+  //     let e = event.target
+  //     let script = document.createElement("script")
+  //     setTimeout(()=>{
+  //       document.getElementById("main-wrapper").removeChild(loadingWrapper)
+  //       script.innerHTML = e.responseText
+  //       document.documentElement.appendChild(script)
+  //     }, 1000)
+  //   }, false)
+  // req.open("GET", "/js/main.js")
+  // req.send()
+</script>
