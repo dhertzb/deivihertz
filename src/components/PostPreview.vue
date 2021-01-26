@@ -1,18 +1,30 @@
 <template>
   <div class="post__preview_card">
     <div class="container">
-  		<prismic-image :field="post.data.thumbnail"/>
+      <prismic-image :field="post.data.thumbnail" />
       <div class="post__preview">
-    	   <prismic-rich-text class="post__preview_title" :field="post.data.title"/>
-         <prismic-rich-text class="post__preview_description" :field="post.data.description"/>     
-      <span class="post__preview_created_at">Há {{date}}</span>
-      <b-button @click="redirectToPost(post.id)" class="post__preview_button" type="is-primary" outlined>Ler artigo</b-button>
+        <prismic-rich-text
+          class="post__preview_title"
+          :field="post.data.title"
+        />
+        <prismic-rich-text
+          class="post__preview_description"
+          :field="post.data.description"
+        />
+        <span class="post__preview_created_at">Há {{ date }}</span>
+        <b-button
+          @click="redirectToPost(post.id)"
+          class="post__preview_button"
+          type="is-primary"
+          outlined
+          >Ler artigo</b-button
+        >
       </div>
     </div>
   </div>
 </template>
 <script>
-import moment from 'moment'
+import moment from "moment";
 
 export default {
   props: {
@@ -21,30 +33,32 @@ export default {
       type: Object
     }
   },
-  methods:{
-    redirectToPost(id){
+  methods: {
+    redirectToPost(id) {
       this.$router.push({
-        name: 'Post',
-        params:{
+        name: "Post",
+        params: {
           postId: id
         }
-      })
+      });
     }
   },
-  computed:{
-    date(){
-      return moment(this.post.first_publication_date, moment.ISO_8601).locale('pt-br').fromNow(true)
+  computed: {
+    date() {
+      return moment(this.post.first_publication_date, moment.ISO_8601)
+        .locale("pt-br")
+        .fromNow(true);
     }
   }
 };
 </script>
 <style lang="scss" scoped>
-.post__preview_card{
+.post__preview_card {
   padding: 20px 0px;
-  &:nth-child(2){
+  &:nth-child(2) {
     background: #fef7da;
   }
-  .container{
+  .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -58,61 +72,53 @@ export default {
       object-fit: cover;
     }
 
-    .post__preview{
+    .post__preview {
       width: 100%;
       padding: 20px 0px 0px 0px;
     }
-    .post__preview_categories{
-      background-color:#7957d5; 
-      width: max-content;
-      padding: 3px 15px;
-      border-radius: 5px;
-      font-size:14px;
-      font-family: Nunito Bold;
-      color:white;
-    }
-    .post__preview_title{
+    .post__preview_title {
       margin-top: 10px;
       color: #414141;
-      font-family: Nunito Bold;
+      h2 {
+        font-family: "Nunito Bold";
+        font-size: 22px;
+      }
     }
-    .post__preview_created_at{
-      color:rgb(118, 118, 118);
+    .post__preview_created_at {
+      color: rgb(118, 118, 118);
       margin-top: 10px;
       display: block;
     }
-    .post__preview_button{
+    .post__preview_button {
       margin: 10px 0px;
-      border-color: #f14668!important;
-      color: #f14668!important;
-    &:hover, &:focus{
-      background: #f14668!important;
-      color: white!important;
+      border-color: #f14668 !important;
+      color: #f14668 !important;
+      &:hover,
+      &:focus {
+        background: #f14668 !important;
+        color: white !important;
       }
     }
   }
 }
 @media (min-width: 768px) {
-  .post__preview_card .container{
+  .post__preview_card .container {
     flex-direction: row;
     justify-content: flex-start;
     padding: 20px;
     align-items: center;
-    img{
+    img {
       width: 50%;
     }
-    h2{
-      font-size: 36px;
-    }
   }
-  .post__preview{
+  .post__preview {
     width: 80%;
     margin-left: 30px;
-    padding: 20px!important;
+    padding: 20px !important;
   }
 }
 @media (min-width: 1024px) {
-  .post__preview_description{
+  .post__preview_description {
     font-size: 22px;
     font-family: Montserrat;
   }

@@ -18,10 +18,15 @@ const routes = [
     name: "Blog",
     component: Blog
   },
-   {
+  {
     path: "/post/:postId",
     name: "Post",
     component: Post
+  },
+  {
+    path: "portfolio",
+    name: "Portfolio",
+    component: Blog
   }
 ];
 

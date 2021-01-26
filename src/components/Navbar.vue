@@ -1,34 +1,24 @@
 <template>
-  <b-navbar>
-    <template slot="brand">
-      <b-navbar-item tag="router-link" :to="{ path: '/' }">
-        <img
-          src="../assets/logo.svg"
-        />
-      </b-navbar-item>
-    </template>
-    <template slot="end">
-      <b-navbar-item @click="$router.push({ name: 'Blog' })">
-        Blog
-      </b-navbar-item>
-      <b-navbar-item href="#">
-        Currículo
-      </b-navbar-item>
-      <b-navbar-item href="#">
-        Projetos
-      </b-navbar-item>
-      <b-navbar-item href="#">
-        Sobre
-      </b-navbar-item>
-      <!-- <b-navbar-dropdown :label="lang">
-        <b-navbar-item @click="changeLang('EN')">
-          EN
-        </b-navbar-item>
-        <b-navbar-item @click="changeLang('BR')">
-          BR
-        </b-navbar-item>
-      </b-navbar-dropdown> -->
-    </template>
+  <b-navbar toggleable="md" class="c-navbar pt- py-3" fixed="top">
+    <b-container>
+      <b-navbar-brand href="/">
+        <img class="c-navbar__logo" src="../assets/logo.svg" />
+      </b-navbar-brand>
+      <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+      <b-collapse id="nav-collapse" is-nav>
+        <b-navbar-nav class="ml-auto">
+          <b-nav-item @click="$router.push({ name: 'Blog' })">
+            Blog
+          </b-nav-item>
+          <b-nav-item @click="$router.push({ name: 'Resume' })">
+            Currículo
+          </b-nav-item>
+          <b-nav-item @click="$router.push({ name: 'Projects' })">
+            Portfólio
+          </b-nav-item>
+        </b-navbar-nav>
+      </b-collapse>
+    </b-container>
   </b-navbar>
 </template>
 <script type="text/javascript">
@@ -45,54 +35,13 @@ export default {
   }
 };
 </script>
-<style>
-.navbar {
-  position: absolute !important;
-  top: 0;
-  width: 100vw;
-  padding: 13px;
-  background-color: transparent !important;
-}
-.navbar-item img {
-  max-height: 40px !important;
-}
-.navbar-item,
-.navbar-link {
-  cursor: pointer;
-  font-size:18px;
-  color: #f14668 !important;
-}
-.navbar-item:hover,
-.navbar-item:focus {
-  background-color: rgba(0, 0, 0, 0) !important;
-}
-.navbar-link:hover,
-.navbar-item:focus {
-  background-color: rgba(0, 0, 0, 0) !important;
-}
-.navbar-item.has-dropdown:focus .navbar-link,
-.navbar-item.has-dropdown:hover .navbar-link,
-.navbar-item.has-dropdown.is-active .navbar-link {
-  background-color: rgba(0, 0, 0, 0) !important;
-}
-.navbar-link::after {
-  border-color: #f14668 !important;
-}
-.navbar-dropdown {
-  border-radius: 10px;
-  border: none !important;
-  background-color: #fae3aa !important;
-}
-.navbar-burger span {
-  color: #f14668 !important;
-  height: 2px !important;
+<style scoped>
+.c-navbar__logo {
+  width: 100px;
 }
 @media (min-width: 768px) {
-  .navbar {
-    padding: 13px 80px !important;
-  }
-  .navbar-item img {
-    max-height: 50px !important;
+  .c-navbar__logo {
+    width: 130px;
   }
 }
 </style>
