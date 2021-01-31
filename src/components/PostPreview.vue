@@ -79,8 +79,8 @@ export default {
     .post__preview_title {
       margin-top: 10px;
       color: #414141;
+      font-family: "Press Start 2P", cursive;
       h2 {
-        font-family: "Nunito Bold";
         font-size: 22px;
       }
     }

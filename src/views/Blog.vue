@@ -2,10 +2,6 @@
   <div>
     <header class="blog__header">
       <h1>Blog</h1>
-      <span
-        >Artigos sobre programação e outros gostosos assuntos que me
-        interessam.</span
-      >
     </header>
     <section class="blog__body">
       <div class="blog-wrapper">
@@ -50,8 +46,8 @@ export default {
   display: flex;
   background: #fff2bf;
   h1 {
-    font-family: "Nunito Bold";
-    font-size: calc(25px + 5vw) !important;
+    font-family: "Press Start 2P", cursive;
+    font-size: calc(22px + 5vw) !important;
     color: #f14668;
   }
   span {

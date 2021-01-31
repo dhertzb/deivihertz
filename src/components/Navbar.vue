@@ -1,5 +1,10 @@
 <template>
-  <b-navbar toggleable="md" class="c-navbar pt- py-3" fixed="top">
+  <b-navbar
+    toggleable="md"
+    class="c-navbar pt- py-3"
+    :class="{ 'c-navbar--scroled': scroled }"
+    fixed="top"
+  >
     <b-container>
       <b-navbar-brand href="/">
         <img class="c-navbar__logo" src="../assets/logo.svg" />
@@ -25,17 +30,32 @@
 export default {
   data() {
     return {
-      lang: "BR"
+      scrollHeight: 0
     };
   },
+  created() {
+    window.addEventListener("scroll", this.updateScroll);
+  },
   methods: {
-    // changeLang(lang) {
-    //   this.lang = lang;
-    // }
+    updateScroll() {
+      this.scrollHeight = window.scrollY;
+    }
+  },
+  computed: {
+    scroled() {
+      return this.scrollHeight > 60;
+    }
   }
 };
 </script>
 <style scoped>
+.c-navbar--scroled {
+  background: #fdfdfe;
+  transition: background 1s;
+}
+.c-navbar .nav-link {
+  font-family: "Quicksand", sans-serif;
+}
 .c-navbar__logo {
   width: 100px;
 }
