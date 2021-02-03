@@ -86,6 +86,7 @@ export default {
     }
     .post__preview_created_at {
       color: rgb(118, 118, 118);
+      font-family: "Quicksand", sans-serif;
       margin-top: 10px;
       display: block;
     }
@@ -120,7 +121,7 @@ export default {
 @media (min-width: 1024px) {
   .post__preview_description {
     font-size: 22px;
-    font-family: Montserrat;
+    font-family: "Quicksand", sans-serif;
   }
 }
 </style>

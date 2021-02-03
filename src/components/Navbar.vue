@@ -59,6 +59,12 @@ export default {
 .c-navbar__logo {
   width: 100px;
 }
+.c-navbar .nav-link:hover {
+  font-weight: bold;
+}
+.c-navbar >>> .navbar-toggler {
+  border: none;
+}
 @media (min-width: 768px) {
   .c-navbar__logo {
     width: 130px;

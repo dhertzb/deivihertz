@@ -18,14 +18,10 @@ export default {
 
 $enable-responsive-font-sizes: true;
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap");
 
 @font-face {
   font-family: "MontSerrat";
   src: url("assets/Montserrat-Regular.ttf");
-}
-@font-face {
-  font-family: "Nunito Bold";
-  src: url("assets/Nunito-Bold.ttf");
 }
 </style>
