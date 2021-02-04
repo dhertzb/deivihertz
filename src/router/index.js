@@ -5,6 +5,7 @@ import Home from "../views/Home";
 import Blog from "../views/Blog.vue";
 import Post from "../views/Post.vue";
 import Resume from "../views/Resume";
+import Projects from "../views/Projects";
 Vue.use(VueRouter);
 
 const routes = [
@@ -32,6 +33,11 @@ const routes = [
     path: "/resume",
     name: "Resume",
     component: Resume
+  },
+  {
+    path: "/projects",
+    name: "Projects",
+    component: Projects
   }
 ];
 
