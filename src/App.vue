@@ -20,6 +20,11 @@ $enable-responsive-font-sizes: true;
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap");
 
+
+body{
+  overflow-x: hidden;
+}
+
 @font-face {
   font-family: "MontSerrat";
   src: url("assets/Montserrat-Regular.ttf");
