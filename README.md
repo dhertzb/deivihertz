@@ -1,31 +1,12 @@
-# deivihertz
+![Logo](https://github.com/dhertzb/deivihertz/blob/main/src/assets/logo.svg)
 
-Deploy test
 
-## Project setup
-```
-npm install
-```
+# Site Pessoal
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## Tecnologias
 
-### Run your tests
-```
-npm run test
-```
+ - Vue.js
+ - VueBootstrap
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Screenshots
