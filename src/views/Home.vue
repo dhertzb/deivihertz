@@ -14,8 +14,8 @@
               </span>
               <b-button
                 class="hero__button"
-                @click="$router.push({ name: 'projects' })"
-                >Ver portfólio.</b-button
+                @click="$router.push({ name: 'Resume' })"
+                >Conhecer.</b-button
               >
             </div>
           </b-col>

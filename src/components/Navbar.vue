@@ -53,14 +53,15 @@ export default {
   background: #fdfdfe;
   transition: background 1s;
 }
-.c-navbar .nav-link {
+.c-navbar.navbar-light .navbar-nav .nav-link {
   font-family: "Quicksand", sans-serif;
-}
-.c-navbar__logo {
-  width: 100px;
+  color: #6c67ae;
 }
 .c-navbar .nav-link:hover {
   font-weight: bold;
+}
+.c-navbar__logo {
+  width: 100px;
 }
 .c-navbar >>> .navbar-toggler {
   border: none;
