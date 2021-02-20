@@ -46,39 +46,21 @@
             <b-row>
               <span class="resume__title">Objetivo</span>
               <span class="resume__subtitle">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Phasellus mauris nunc, iaculis et scelerisque sed, condimentum
-                id leo. Duis nec nisi nibh. Integer in augue ut massa tincidunt
-                commodo quis blandit ligula. Sed at arcu in erat maximus
-                suscipit. Cras in fermentum risus. Suspendisse at risus nec
-                felis posuere lobortis. Integer non sem at mi tempus viverra eu
-                ac ligula. Vestibulum in fermentum enim. Morbi ut condimentum
-                sapien. Suspendisse massa tellus, pharetra in quam vel,
-                sollicitudin elementum metus. Aliquam nec velit dui. Nullam
-                bibendum orci ut faucibus convallis. Integer quis maximus massa,
-                at venenatis tellus. Nulla imperdiet lobortis diam, non congue
-                eros blandit commodo.
+                Construir sistemas escaláveis e robustos, satisfatórios tanto na experiência do usuário quanto visualmente, seguindo uma arquitetura limpa e o padrão que melhor se encaixa no projeto.
               </span>
             </b-row>
             <b-row>
               <span class="resume__title">Experiencia</span>
               <span class="resume__subtitle">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Phasellus mauris nunc, iaculis et scelerisque sed, condimentum
-                id leo. Duis nec nisi nibh. Integer in augue ut massa tincidunt
-                commodo quis blandit ligula. Sed at arcu in erat maximus
-                suscipit. Cras in fermentum risus. Suspendisse at risus nec
-                felis posuere lobortis. Integer non sem at mi tempus viverra eu
-                ac ligula. Vestibulum in fermentum enim. Morbi ut condimentum
-                sapien. Suspendisse massa tellus, pharetra in quam vel,
-                sollicitudin elementum metus. Aliquam nec velit dui. Nullam
-                bibendum orci ut faucibus convallis. Integer quis maximus massa,
-                at venenatis tellus. Nulla imperdiet lobortis diam, non congue
-                eros blandit commodo.
+                <jobs-experience />
               </span>
             </b-row>
             <b-row>
               <span class="resume__title">Competências</span>
+              <competencies :list="compotenciesList" />
+            </b-row>
+            <b-row>
+              <span class="resume__title">Habilidades</span>
               <competencies :list="compotenciesList" />
             </b-row>
             <b-row>
@@ -123,8 +105,9 @@
 </template>
 <script>
 import moment from "moment";
+import JobsExperience from '../components/JobsExperience'
 export default {
-  components: {},
+  components: {JobsExperience},
   data() {
     return {
       competencieList: []
