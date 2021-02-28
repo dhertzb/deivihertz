@@ -46,22 +46,28 @@
             <b-row>
               <span class="resume__title">Objetivo</span>
               <span class="resume__subtitle">
-                Construir sistemas escaláveis e robustos, satisfatórios tanto na experiência do usuário quanto visualmente, seguindo uma arquitetura limpa e o padrão que melhor se encaixa no projeto.
-              </span>
-            </b-row>
-            <b-row>
-              <span class="resume__title">Experiencia</span>
-              <span class="resume__subtitle">
-                <jobs-experience />
+                Construir sistemas escaláveis e robustos, satisfatórios tanto na
+                experiência do usuário quanto visualmente, seguindo uma
+                arquitetura limpa e o padrão que melhor se encaixar ao projeto.
               </span>
             </b-row>
             <b-row>
               <span class="resume__title">Competências</span>
-              <competencies :list="compotenciesList" />
+              <div>
+               <ul>
+                 <li>ois</li>
+               </ul>
+              </div>
             </b-row>
             <b-row>
               <span class="resume__title">Habilidades</span>
               <competencies :list="compotenciesList" />
+            </b-row>
+            <b-row>
+              <span class="resume__title">Experiência</span>
+              <span class="resume__subtitle">
+                <jobs-experience />
+              </span>
             </b-row>
             <b-row>
               <span class="resume__title">Projetos</span>
@@ -105,9 +111,9 @@
 </template>
 <script>
 import moment from "moment";
-import JobsExperience from '../components/JobsExperience'
+import JobsExperience from "../components/JobsExperience";
 export default {
-  components: {JobsExperience},
+  components: { JobsExperience },
   data() {
     return {
       competencieList: []
