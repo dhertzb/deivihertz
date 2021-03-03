@@ -12,13 +12,13 @@
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav class="ml-auto">
-          <b-nav-item @click="$router.push({ name: 'Blog' })">
+          <b-nav-item @click="$router.push('/blog')">
             Blog
           </b-nav-item>
-          <b-nav-item @click="$router.push({ name: 'Resume' })">
+          <b-nav-item @click="$router.push('/resume')">
             Currículo
           </b-nav-item>
-          <b-nav-item @click="$router.push({ name: 'Projects' })">
+          <b-nav-item @click="$router.push( '/projects' )">
             Portfólio
           </b-nav-item>
         </b-navbar-nav>

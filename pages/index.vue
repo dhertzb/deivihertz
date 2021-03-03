@@ -4,7 +4,7 @@
       <b-container>
         <b-row class="hero__row">
           <b-col class="hero__col" md="6" order-md="2">
-            <img class="hero__img" src="/images/computer.svg" />
+            <img class="hero__img" src="@/assets/images/computer.svg" />
           </b-col>
           <b-col md="6" order-md="1">
             <div class="hero__text">
@@ -54,7 +54,7 @@ export default {};
   font-size: clamp(14px, 2.5vw, 1.5rem);
   display: none;
   color: #9371b2;
-  font-family: "Quicksand", sans-serif;
+  font-family: "UbuntuMono", sans-serif;
 }
 .hero__col {
   display: flex;
