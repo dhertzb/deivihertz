@@ -1,7 +1,7 @@
 ---
-title: My first Blog Post
-description: Learning how to use @nuxt/content to create a blog
-img: first-blog-post.jpg
+title: Estudando a força da natureza
+description: Learning how to use @nuxt/content to create a blog, Learning how to use @nuxt/content to create a blog Learning how to use @nuxt/content to create a blog Learning how to use @nuxt/content to create a blog
+img: me.jpg
 alt: my first blog post
 ---
 

@@ -15,8 +15,13 @@ export default {
   },
   loading: { color: '#fff' },
   plugins: [],
-  modules: [ 'bootstrap-vue/nuxt', '@nuxtjs/style-resources','@nuxt/content'],
-  css: ['@/assets/css/_global.scss'],
+  modules: [ 'bootstrap-vue/nuxt','@nuxt/content'],
+  buildModules: [
+    '@nuxtjs/style-resources',
+  ],
+  styleResources: {
+    scss: ['@/assets/css/_global.scss'],
+   },
   build: {
     extend(config, ctx) {},
   },

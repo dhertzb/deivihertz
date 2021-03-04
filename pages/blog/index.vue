@@ -44,8 +44,9 @@ export default {
   background: #fff2bf;
   h1 {
     font-family: "Press Start 2P", cursive;
+    text-shadow: 6px 0.5vw 0px #a2dbb0;
     font-size: calc(22px + 5vw) !important;
-    color: #f14668;
+    color: #6c67ae;
   }
   span {
     width: 80%;
@@ -54,7 +55,8 @@ export default {
   }
 }
 .blog__body {
-  background: white;
+  position: relative;
+  top: -110px;
 }
 @media (min-width: 768px) {
   .blog__header {

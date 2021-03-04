@@ -1,8 +1,12 @@
 <template>
-  <div class="post__preview_card">
-    <div class="container">
+<div class="container">
+  <div class="post__card">
       <div class="post__preview">
-        <h2>{{post.title}}</h2>
+        <img class="post__image"  :src="require(`~/assets/images/${post.img}`)" />
+        <div>
+          <h2 class="post__title">{{post.title}}</h2>
+          <p>{{post.description}}</p>
+        </div>
       </div>
     </div>
   </div>
@@ -37,75 +41,36 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-.post__preview_card {
-  padding: 20px 0px;
-  &:nth-child(2) {
-    background: #fef7da;
+  .post__card{
+    border: 5px solid #6c67ae;
+    background-color: white;
+    border-radius: 10px;
   }
-  .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 30px;
-    img {
-      border-radius: 30px;
-      width: 100%;
-      max-width: 550px;
-      height: auto;
-      object-fit: cover;
-    }
+  .post__preview{
+    display: grid;
+    margin: 10px;
+    grid-template-columns: 100%;
+  }
+  .post__image{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  .post__title{
+    font-family: $font-primary;
+  }
+  @media (min-width: 768px){
+    .post__card{
+      margin: 20px;
+      padding: 10px;
 
-    .post__preview {
-      width: 100%;
-      padding: 20px 0px 0px 0px;
     }
-    .post__preview_title {
-      margin-top: 10px;
-      color: #414141;
-      font-family: "Press Start 2P", cursive;
-      h2 {
-        font-size: 22px;
-      }
+    .post__preview{
+      grid-template-columns: 50% 50%;
+      grid-gap: 30px;
     }
-    .post__preview_created_at {
-      color: rgb(118, 118, 118);
-      font-family: "Quicksand", sans-serif;
-      margin-top: 10px;
-      display: block;
-    }
-    .post__preview_button {
-      margin: 10px 0px;
-      border-color: #f14668 !important;
-      color: #f14668 !important;
-      &:hover,
-      &:focus {
-        background: #f14668 !important;
-        color: white !important;
-      }
+    .post__image{
+      max-height: 300px;
     }
   }
-}
-@media (min-width: 768px) {
-  .post__preview_card .container {
-    flex-direction: row;
-    justify-content: flex-start;
-    padding: 20px;
-    align-items: center;
-    img {
-      width: 50%;
-    }
-  }
-  .post__preview {
-    width: 80%;
-    margin-left: 30px;
-    padding: 20px !important;
-  }
-}
-@media (min-width: 1024px) {
-  .post__preview_description {
-    font-size: 22px;
-    font-family: "Quicksand", sans-serif;
-  }
-}
 </style>

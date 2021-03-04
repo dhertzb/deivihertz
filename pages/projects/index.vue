@@ -50,6 +50,7 @@ export default {
   padding: 150px 0px;
 }
 .projects__title {
+  text-shadow: 6px 3px 0px #ae6767;
   font-family: "Press Start 2P", cursive;
   color: white;
   font-size: clamp(18px, 26px, 32px);

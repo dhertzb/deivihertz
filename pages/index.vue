@@ -12,11 +12,12 @@
               <span class="hero__subtitle">
                 Desenvolvedor front end, vários tec tec no teclado.
               </span>
-              <b-button
-                class="hero__button"
-                @click="$router.push({ name: 'Resume' })"
-                >Conhecer</b-button
-              >
+              <nuxt-link to="/resume">
+                <b-button
+                  class="hero__button"
+                  >Conhecer</b-button
+                >
+              </nuxt-link>
             </div>
           </b-col>
         </b-row>
@@ -47,13 +48,15 @@ export default {};
   font-family: "Press Start 2P", cursive;
   color: #e82e8b;
   font-size: clamp(36px, 40vw, 48px);
+  text-shadow: 6px 0.5vw 0px #6c67ae;
+
 }
 .hero__subtitle {
   margin-top: 0.5vw;
   display: inline-block;
   font-size: clamp(14px, 2.5vw, 1.5rem);
   display: none;
-  color: #9371b2;
+  color: #622d92;
   font-family: "UbuntuMono", sans-serif;
 }
 .hero__col {
