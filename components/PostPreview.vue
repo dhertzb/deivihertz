@@ -3,7 +3,7 @@
   <div class="post__card">
       <div class="post__preview">
         <img class="post__image"  :src="require(`~/assets/images/${post.img}`)" />
-        <div>
+        <div class="post__text">
           <h2 class="post__title">{{post.title}}</h2>
           <p>{{post.description}}</p>
         </div>
@@ -56,18 +56,20 @@ export default {
     object-fit: cover;
     border-radius: 15px;
   }
-  .post__title{
+    .post__text{
+      padding: 20px;
+    }
+.post__title{
     font-family: $font-primary;
   }
   @media (min-width: 768px){
     .post__card{
       margin: 20px;
       padding: 10px;
-
     }
+
     .post__preview{
       grid-template-columns: 50% 50%;
-      grid-gap: 30px;
     }
     .post__image{
       max-height: 300px;

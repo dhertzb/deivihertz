@@ -1,5 +1,4 @@
 export default {
-  mode: 'spa',
   head: {
     title: process.env.npm_package_name || '',
     meta: [
@@ -13,6 +12,7 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
+  target: 'static',
   loading: { color: '#fff' },
   plugins: [],
   modules: [ 'bootstrap-vue/nuxt','@nuxt/content'],

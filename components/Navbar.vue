@@ -40,7 +40,9 @@ export default {
     };
   },
   created() {
+   if (process.browser){
     window.addEventListener("scroll", this.updateScroll);
+   }
   },
   methods: {
     updateScroll() {
