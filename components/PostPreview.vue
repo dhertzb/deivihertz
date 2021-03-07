@@ -60,7 +60,7 @@ export default {
       padding: 20px;
     }
 .post__title{
-    font-family: $font-primary;
+    font-family: 'OpenSans';
   }
   @media (min-width: 768px){
     .post__card{

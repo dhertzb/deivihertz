@@ -14,7 +14,8 @@
     "@nuxtjs/style-resources": "^1.0.0",
     "bootstrap-vue": "^2.21.2",
     "moment": "^2.29.1",
-    "nuxt": "^2.0.0"
+    "nuxt": "^2.15.0",
+    "nuxt-font-loader-strategy": "^1.1.9"
   },
   "devDependencies": {
     "fibers": "^5.0.0",

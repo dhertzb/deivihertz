@@ -1,4 +1,9 @@
 export default {
+  loading: {
+    color: 'blue',
+    height: '5px'
+  },
+  target: 'static',
   head: {
     title: process.env.npm_package_name || '',
     meta: [
@@ -12,10 +17,43 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
-  target: 'static',
   loading: { color: '#fff' },
   plugins: [],
-  modules: [ 'bootstrap-vue/nuxt','@nuxt/content'],
+  modules: [ 'bootstrap-vue/nuxt','@nuxt/content',
+  ['nuxt-font-loader-strategy', { 
+    ignoredEffectiveTypes: ['2g', 'slow-2g'],
+    fonts: [
+      {
+        fileExtensions: ['ttf'],
+        fontFamily: 'Press Start 2P',
+        fontFaces: [
+          {
+            preload: true,
+            src: '@/assets/fonts/PressStart2P-Regular',
+            fontWeight: 400,
+            fontStyle: 'normal'
+          },
+        ]
+      },
+      {
+        fileExtensions: ['ttf'],
+        fontFamily: 'UbuntuMono',
+        fontFaces: [
+          {
+            preload: true,
+            src: '@/assets/fonts/UbuntuMono-Regular',
+            fontWeight: 400,
+            fontStyle: 'normal'
+          },
+          {
+            src: '@/assets/fonts/UbuntuMono-Bold',
+            fontWeight: 700,
+            fontStyle: 'bold'
+          }
+        ]
+      },
+    ]
+  }]],
   buildModules: [
     '@nuxtjs/style-resources',
   ],

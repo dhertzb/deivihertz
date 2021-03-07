@@ -61,7 +61,6 @@
             </b-row>
             <b-row>
               <span class="resume__title">Habilidades</span>
-              <competencies :list="compotenciesList" />
             </b-row>
             <b-row>
               <span class="resume__title">Experiência</span>
