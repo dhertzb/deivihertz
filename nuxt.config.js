@@ -3,7 +3,7 @@ export default {
     color: 'blue',
     height: '5px'
   },
-  target: 'static',
+  target: 'server',
   head: {
     title: process.env.npm_package_name || '',
     meta: [
@@ -21,7 +21,6 @@ export default {
   plugins: [],
   modules: [ 'bootstrap-vue/nuxt','@nuxt/content',
   ['nuxt-font-loader-strategy', { 
-    ignoredEffectiveTypes: ['2g', 'slow-2g'],
     fonts: [
       {
         fileExtensions: ['ttf'],
@@ -37,7 +36,7 @@ export default {
       },
       {
         fileExtensions: ['ttf'],
-        fontFamily: 'UbuntuMono',
+        fontFamily: 'UbuntuMono', 
         fontFaces: [
           {
             preload: true,
@@ -46,6 +45,7 @@ export default {
             fontStyle: 'normal'
           },
           {
+            preload: true,  
             src: '@/assets/fonts/UbuntuMono-Bold',
             fontWeight: 700,
             fontStyle: 'bold'

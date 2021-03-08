@@ -62,7 +62,7 @@ export default {
   transition: background 1s;
 }
 .c-navbar.navbar-light .navbar-nav .nav-link a {
-  font-family: "UbuntuMono", sans-serif;
+  font-family: "UbuntuMono";
   color: #e82e8b;
   font-size: 18px;
 }
