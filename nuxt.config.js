@@ -3,7 +3,7 @@ export default {
     color: 'blue',
     height: '5px'
   },
-  target: 'server',
+  target: 'static',
   head: {
     title: process.env.npm_package_name || '',
     meta: [
