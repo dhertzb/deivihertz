@@ -55,8 +55,11 @@ export default {
     ]
   }]],
   buildModules: [
-    '@nuxtjs/style-resources',
+    '@nuxtjs/style-resources',   '@aceforth/nuxt-optimized-images',
   ],
+  optimizedImages: {
+    optimizeImages: true
+  },
   styleResources: {
     scss: ['@/assets/css/_global.scss'],
    },

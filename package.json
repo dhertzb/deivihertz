@@ -1,28 +1,31 @@
 {
-    "name": "deivihertz",
-    "version": "1.0.0",
-    "description": "My astonishing Nuxt.js project",
-    "author": "msweeneydev",
-    "private": true,
-    "scripts": {
-      "dev": "nuxt",
-      "build": "nuxt generate",
-      "start": "nuxt start"
-    },
-    "dependencies": {
-      "@nuxt/content": "^1.13.1",
-      "@nuxtjs/style-resources": "^1.0.0",
-      "bootstrap-vue": "^2.21.2",
-      "moment": "^2.29.1",
-      "nuxt": "^2.15.0",
-      "nuxt-font-loader-strategy": "^1.1.9"
-    },
-    "devDependencies": {
-      "fibers": "^5.0.0",
-      "node-sass": "^5.0.0",
-      "nodemon": "^2.0.7",
-      "sass": "^1.32.8",
-      "sass-loader": "10"
-    }
+  "name": "deivihertz",
+  "version": "1.0.0",
+  "description": "My astonishing Nuxt.js project",
+  "author": "msweeneydev",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt generate",
+    "start": "nuxt start"
+  },
+  "dependencies": {
+    "@nuxt/content": "^1.13.1",
+    "@nuxtjs/style-resources": "^1.0.0",
+    "bootstrap-vue": "^2.21.2",
+    "moment": "^2.29.1",
+    "nuxt": "^2.15.0",
+    "nuxt-font-loader-strategy": "^1.1.9"
+  },
+  "devDependencies": {
+    "@aceforth/nuxt-optimized-images": "^1.4.0",
+    "fibers": "^5.0.0",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-pngquant": "^9.0.2",
+    "imagemin-svgo": "^9.0.0",
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.7",
+    "sass": "^1.32.8",
+    "sass-loader": "10"
   }
-  
+}
