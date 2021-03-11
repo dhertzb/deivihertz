@@ -7,7 +7,7 @@
   >
     <b-container>
       <b-navbar-brand href="/">
-        <img class="c-navbar__logo" src="@/assets/images/logo.svg" />
+        <img alt="logo" width="130px" height="55" class="c-navbar__logo" src="@/assets/images/logo.svg" />
       </b-navbar-brand>
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
       <b-collapse id="nav-collapse" is-nav>
