@@ -13,12 +13,11 @@
               <span class="hero__subtitle">
                 Desenvolvedor front end, vários tec tec no teclado.
               </span>
-              <nuxt-link to="/resume">
+              
                 <b-button
                   class="hero__button"
                   >Conhecer</b-button
                 >
-              </nuxt-link>
             </div>
           </b-col>
         </b-row>
