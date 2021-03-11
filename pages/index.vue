@@ -5,7 +5,7 @@
       <b-container>
         <b-row class="hero__row">
           <b-col class="hero__col" md="6" order-md="2">
-            <img alt="computer ilustration" width="540" height="474.763" class="hero__img" src="@/assets/images/computer.svg" />
+            <img alt="computer ilustration" class="hero__img" src="@/assets/images/computer.svg" />
           </b-col>
           <b-col md="6" order-md="1">
             <div class="hero__text">
