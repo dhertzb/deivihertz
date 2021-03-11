@@ -5,7 +5,7 @@
       <b-container>
         <b-row class="hero__row">
           <b-col class="hero__col" md="6" order-md="2">
-            <img alt="computer ilustration" class="hero__img" src="@/assets/images/computer.svg" />
+            <img alt="computer ilustration" width="540" height="474.763" class="hero__img" src="@/assets/images/computer.svg" />
           </b-col>
           <b-col md="6" order-md="1">
             <div class="hero__text">
@@ -13,11 +13,12 @@
               <span class="hero__subtitle">
                 Desenvolvedor front end, vários tec tec no teclado.
               </span>
-              
+              <nuxt-link to="/resume">
                 <b-button
                   class="hero__button"
                   >Conhecer</b-button
                 >
+              </nuxt-link>
             </div>
           </b-col>
         </b-row>
