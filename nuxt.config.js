@@ -60,12 +60,8 @@ export default {
     ]
   }]],
   buildModules: [
-    '@nuxtjs/style-resources',   '@aceforth/nuxt-optimized-images',
+    '@nuxtjs/style-resources',
   ],
-  optimizedImages: {
-    optimizeImages: true,
-    optimizeImagesInDev: true
-  },
   styleResources: {
     scss: ['@/assets/css/_global.scss'],
    },
