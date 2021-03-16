@@ -1,4 +1,7 @@
 export default {
+  router: {
+    prefetchPayloads: false
+  },
   loading: {
     color: 'blue',
     height: '5px'
@@ -20,7 +23,6 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
-  loading: { color: '#fff' },
   plugins: [],
   modules: [ 'bootstrap-vue/nuxt','@nuxt/content',
   ['nuxt-font-loader-strategy', { 
@@ -61,7 +63,8 @@ export default {
     '@nuxtjs/style-resources',   '@aceforth/nuxt-optimized-images',
   ],
   optimizedImages: {
-    optimizeImages: true
+    optimizeImages: true,
+    optimizeImagesInDev: true
   },
   styleResources: {
     scss: ['@/assets/css/_global.scss'],

@@ -6,9 +6,11 @@
     fixed="top"
   >
     <b-container>
-      <b-navbar-brand href="/">
-        <img alt="logo" width="130px" height="55" class="c-navbar__logo" src="@/assets/images/logo.svg" />
-      </b-navbar-brand>
+      <nuxt-link to="/">
+        <b-navbar-brand >
+          <img alt="logo" width="130px" height="55" class="c-navbar__logo" src="@/assets/images/logo.svg" />
+        </b-navbar-brand> 
+      </nuxt-link>
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav class="ml-auto">
@@ -62,12 +64,12 @@ export default {
   transition: background 1s;
 }
 .c-navbar.navbar-light .navbar-nav .nav-link a {
-  font-family: "UbuntuMono";
+  font-family: 'UbuntuMono',sans-serif;
   color: #e82e8b;
   font-size: 18px;
 }
 .c-navbar .nav-link:hover {
-  font-weight: bold;
+  transform: scale(1.1);
 }
 .c-navbar__logo {
   width: 100px;

@@ -1,11 +1,10 @@
 <template>
   <div>
-    <LazyHydrate never>
     <section class="hero">
       <b-container>
         <b-row class="hero__row">
           <b-col class="hero__col" md="6" order-md="2">
-            <img alt="computer ilustration" class="hero__img" src="@/assets/images/computer.svg" />
+            <img class="hero__img" alt="computer ilustration"  src="@/assets/images/computer.svg?original"/>
           </b-col>
           <b-col md="6" order-md="1">
             <div class="hero__text">
@@ -24,17 +23,9 @@
         </b-row>
       </b-container>
     </section>
-    </LazyHydrate>
   </div>
 </template>
 <script>
-import LazyHydrate from 'vue-lazy-hydration';
-
-export default {
-   components: {
-    LazyHydrate,
-  }
-}
 </script>
 <style scoped lang="scss">
 .hero {
@@ -42,7 +33,7 @@ export default {
   height: 100vh;
 }
 .hero__img {
-  width: 300px;
+  width: 310px;
   z-index: 2;
 }
 .hero__row {
@@ -79,10 +70,10 @@ export default {
   font-family: "Press Start 2P", cursive;
 }
 @media (min-width: 768px) {
-  .hero__img {
-    width: 100%;
-  }
-  .hero__row {
+.hero__img {
+  width: 400px;
+}
+.hero__row {
     height: 100vh;
   }
   .hero .hero__title {
@@ -99,6 +90,11 @@ export default {
   .hero .hero__button {
     font-size: 14px;
     margin-top: 15px;
+  }
+}
+@media (min-width: 1024px) {
+  .hero__img{
+    width: 100%;
   }
 }
 </style>
