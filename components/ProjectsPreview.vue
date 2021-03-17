@@ -61,12 +61,13 @@ export default {
   display: block;
   padding: 20px;
   font-weight: bold;
-  font-family: "Quicksand";
 }
 .c-project-button {
   margin: 10px;
   border: #e82e8b 5px solid;
   color: #e82e8b;
+  font-weight: bold;
+  background: white;
 }
 .c-project-button:::hover {
   background-color: #e82e8b;

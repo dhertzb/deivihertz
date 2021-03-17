@@ -9,31 +9,24 @@
           <div class="resume__aside">
             <div class="mt-4 ml-md-2">
               <span class="resume__subtitle"
-                ><font-awesome-icon class="mr-2" icon="id-card" />Deividy Hertz
+                >Deividy Hertz
                 Bonetti</span
               >
               <span class="resume__subtitle"
-                ><font-awesome-icon class="mr-2" icon="calendar" />22 anos</span
+                >22 anos</span
               >
               <span class="resume__subtitle"
-                ><font-awesome-icon class="mr-2" icon="phone" /> (49)
+                >(49)
                 98851-0740</span
               >
               <span class="resume__subtitle"
-                ><font-awesome-icon
-                  class="mr-2"
-                  icon="envelope"
-                />dhertzb@gmail.com</span
+                >dhertzb@gmail.com</span
               >
               <span class="resume__subtitle"
-                ><font-awesome-icon class="mr-2" :icon="['fab', 'github']" /><a
+                ><a
                   href="https://github.com/dhertzb"
                   >github.com/dhertzb</a
                 ></span
-              >
-              <span class="resume__subtitle"
-                ><font-awesome-icon class="mr-2" icon="file-pdf" />Baixar em
-                pdf.</span
               >
             </div>
           </div>
@@ -79,15 +72,37 @@
             <b-row>
               <span class="resume__title">Experiência</span>
               <span class="resume__subtitle">
-                <div class="resume__timeline">
-                  <h4>Ecomp</h4>
+                 <h5>Ecomp</h5>
+                 <h6>Empresa junior de desenvolvimento web da UFPR.</h6>
+                <div class="resume__timeline ml-3 pl-1">
+                 <span>
+                   Na ecomp aprendi as tecnologias web essenciais, participei do desenvolvimento de uma aplicação de gestão de empresas juniores utilizando laravel e javascript e também ministrei cursos para novos membros 
+                  </span>
                 </div>
-                <div class="resume__timeline">
-                  <h4>Festar</h4>
+              </span>
+              <span class="resume__subtitle mt-2">
+                <h5>Festar</h5>
+                <h6>Start up de tickets de eventos.</h6>
+                <div class="resume__timeline ml-3 pl-1">
+                  <span>
+                    A festar marcou um curto periodo em que participei de um contrato de vesting na função de desenvolvedor implementando o backend com laravel, planejando telas e desenvolvendo os componentes da interface em vue.
+                  </span>
                 </div>
-                <div class="resume__timeline">
-                  <h4>Clientar</h4>
+              </span>
+              <span class="resume__subtitle mt-2">
+                <h5>Clientar</h5>
+                <h6>Sistema sass de CRM.</h6>
+                <div class="resume__timeline ml-3 pl-1">
+                  <span>
+                    Foi aqui que tive meu maior desafio e consequentemente evolução como desenvolvedor até então. Ao longo de dois anos desenhei, arquitetei, prototipei e implementei todas telas e funcionalidades do sistema.
+                  </span>
+                  <h6 class="mt-2">
+                    <nuxt-link to="/projects">
+                      Ver mais detalhes sobre esse projeto.
+                    </nuxt-link>
+                  </h6>
                 </div>
+              </span>
               </span>
             </b-row>
           </b-container>
@@ -131,8 +146,8 @@ export default {
   padding: 15px;
   height: 100%;
 }
-aside .resume__subtitle, aside a{
-  color: #681daf;
+.resume__subtitle, a{
+  color: white;
 }
 .resume__picture img {
   width: 200px;
@@ -151,7 +166,6 @@ aside .resume__subtitle, aside a{
 .resume__list{
   display: block;
   color: white;
-  list-style: inside;
   width: 100%;
 }
 h2.resume__title {
@@ -201,7 +215,7 @@ span.resume__title {
 }
 .resume__timeline::before{
   content:'';
-  background: violet;
+  background: #dd338e;
   height: 100%;
   width: 5px;
   left: -10px;
