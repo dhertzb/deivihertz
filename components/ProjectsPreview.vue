@@ -6,7 +6,8 @@
     </div>
     <div class="c-project-card__body">
       <span class="c-project-card__description">{{ description }}</span>
-      <b-button class="c-project-button" variant="primary">Visualizar</b-button>
+      <b-button @click="goTo()" class="c-project-button" variant="primary">
+        Ver detalhes</b-button>
     </div>
   </div>
 </template>
@@ -24,6 +25,15 @@ export default {
     image: {
       required: true,
       type: String
+    },
+    slug:{
+      required:true,
+      type: String
+    }
+  },
+  methods:{
+    goTo(){
+      this.$router.push(`/projects/${this.slug}`)
     }
   }
 };
@@ -32,7 +42,9 @@ export default {
 .c-project-card {
   border: 5px solid #e82e8b;
   border-radius: 10px;
+  height: 450px;
   background: #e5ffff;
+  box-shadow: 0px 8px 1px -3px #8db299;
 }
 .c-project-card__title {
   font-family: "Press Start 2P", cursive;
@@ -59,14 +71,18 @@ export default {
 }
 .c-project-card__description {
   display: block;
+  font-family: 'UbuntuMono';
+  font-size: 18px;
+  height: 150px;
   padding: 20px;
   font-weight: bold;
 }
 .c-project-button {
-  margin: 10px;
   border: #e82e8b 5px solid;
   color: #e82e8b;
   font-weight: bold;
+  font-size: 14px;
+  font-family: "Press Start 2P", cursive;
   background: white;
 }
 .c-project-button:::hover {

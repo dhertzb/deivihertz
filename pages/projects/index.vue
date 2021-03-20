@@ -10,6 +10,7 @@
         <project-preview
           :image="project.image"
           :title="project.title"
+          :slug="project.slug"
           :description="project.description"
           v-for="(project, index) in projects"
           :key="index"
@@ -31,13 +32,15 @@ export default {
           title: "Clientar",
           description:
             "Estruturação do front end e implementação utilizando as boas práticas do mercado na construção de um sistema CRM.",
-          image: require("@/assets/images/clientarLogo.svg")
+          image: require("@/assets/images/clientarLogo.svg"),
+          slug: 'clientar'
         },
         {
           title: "deivihertz",
           description:
             "Desenvolvimento de site pessoal com o intuito de servir de vitrine aos meus projetos e estudos.",
-          image: require("@/assets/images/logo2.svg")
+          image: require("@/assets/images/logo2.svg"),
+          slug: 'deivihertz'
         }
       ]
     };
@@ -45,6 +48,9 @@ export default {
 };
 </script>
 <style scoped>
+.projects{
+  overflow: hidden;
+}
 .projects__header {
   background: #c3e6cb;
   padding: 150px 0px;
@@ -59,12 +65,13 @@ export default {
   position: relative;
   top: -100px;
   display: grid;
+  grid-gap: 20px;
   grid-template-columns: 100%;
-  grid-gap: 10px;
 }
 @media (min-width: 768px) {
   .projects__preview {
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 40% 40%;
+    justify-content: center;
   }
   .projects__title {
     font-size: 48px;
