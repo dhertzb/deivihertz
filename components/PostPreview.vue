@@ -6,13 +6,13 @@
         <div class="post__text">
           <h2 class="post__title">{{post.title}}</h2>
           <p>{{post.description}}</p>
+          <b-button @click="redirectToPost">Ver artigo</b-button>
         </div>
       </div>
     </div>
   </div>
 </template>
 <script>
-import moment from "moment"
 
 export default {
   props: {
@@ -22,22 +22,10 @@ export default {
     }
   },
   methods: {
-    redirectToPost(id) {
-      this.$router.push({
-        name: "Post",
-        params: {
-          postId: id
-        }
-      });
+    redirectToPost() {
+      this.$router.push(`/blog/${this.post.slug}`)
     }
   },
-  computed: {
-    date() {
-      return moment(this.post.first_publication_date, moment.ISO_8601)
-        .locale("pt-br")
-        .fromNow(true);
-    }
-  }
 };
 </script>
 <style lang="scss" scoped>
